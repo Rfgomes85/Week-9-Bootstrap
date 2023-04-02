@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pet Store</title>
+    <style>
+      /* Add your CSS styles here */
+      /* The layout should have a header and footer that span the full width of the viewport, a fixed-width sidebar, and a main content area that takes up the remaining horizontal space. The layout should be responsive and adapt to different screen sizes. */
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+      }
+      .header,
+      .footer {
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 3px solid blue;
+      }
+      .sidebar {
+        background-color: #eee;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid black;
+      }
+      .main-content {
+        background-color: #fff;
+        padding: 10px;
+        display: flex;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+      <div class="main-content">
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main-area">Main Content</main>
+      </div>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

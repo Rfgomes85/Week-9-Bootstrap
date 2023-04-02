@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pet Store</title>
+    <style>
+      /* Add your CSS styles here */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+      }
+      .header,
+      .footer {
+        background-color: #ddd;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+      .sidebar {
+        background-color: #eee;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .main-content {
+        background-color: #fff;
+        padding: 10px;
+      }
+      .product-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .product {
+        background-color: #ddd;
+        width: 30%;
+        height: 200px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+      <aside class="sidebar">Sidebar</aside>
+      <main class="main-content">
+        <div class="product-display">
+          <div class="product">Product 1</div>
+          <div class="product">Product 2</div>
+          <div class="product">Product 3</div>
+          <div class="product">Product 4</div>
+          <div class="product">Product 5</div>
+          <div class="product">Product 6</div>
+        </div>
+      </main>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>
